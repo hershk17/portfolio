@@ -1,23 +1,49 @@
-import blockchainWalletImg from "@/public/img/blockchain-wallet.webp";
-import eventureImg from "@/public/img/eventure.webp";
-import libraryImg from "@/public/img/library.webp";
-import mailImg from "@/public/img/mail.webp";
-import movieSpaceImg from "@/public/img/movie-space.webp";
-import policyPlannerImg from "@/public/img/policy-planner.webp";
-import portfolioImg from "@/public/img/portfolio.webp";
-import snlImg from "@/public/img/snl.webp";
-import weatherWidgetImg from "@/public/img/weather-widget.webp";
-import wordleImg from "@/public/img/wordle.webp";
+// Screenshot imports
+import blockchainWalletImg from "@/public/img/screenshots/blockchain-wallet.webp";
+import eventureImg from "@/public/img/screenshots/eventure.webp";
+import libraryImg from "@/public/img/screenshots/library.webp";
+import mailImg from "@/public/img/screenshots/mail.webp";
+import movieSpaceImg from "@/public/img/screenshots/movie-space.webp";
+import policyPlannerImg from "@/public/img/screenshots/policy-planner.webp";
+import portfolioImg from "@/public/img/screenshots/portfolio.webp";
+import snlImg from "@/public/img/screenshots/snl.webp";
+import weatherWidgetImg from "@/public/img/screenshots/weather-widget.webp";
+import wordleImg from "@/public/img/screenshots/wordle.webp";
 
-// TODO: update file formats
-import senecaImg from "@/public/img/seneca.png";
-import parImg from "@/public/img/par.svg";
-import ceridianImg from "@/public/img/ceridian.png";
+// Logo imports
+import ceridianImg from "@/public/img/logos/ceridian.png";
+import parImg from "@/public/img/logos/par.svg";
+import senecaImg from "@/public/img/logos/seneca.png";
+
+// Icon imports
+import angularIcon from "@/public/img/icons/angular.svg";
+import awsIcon from "@/public/img/icons/aws.svg";
+import cppIcon from "@/public/img/icons/cpp.svg";
+import csharpIcon from "@/public/img/icons/csharp.svg";
+import cssIcon from "@/public/img/icons/css.svg";
+import dockerIcon from "@/public/img/icons/docker.svg";
+import firebaseIcon from "@/public/img/icons/firebase.svg";
+import gitIcon from "@/public/img/icons/git.svg";
+import githubIcon from "@/public/img/icons/github.svg";
+import htmlIcon from "@/public/img/icons/html.svg";
+import javaIcon from "@/public/img/icons/java.svg";
+import javascriptIcon from "@/public/img/icons/javascript.svg";
+import jenkinsIcon from "@/public/img/icons/jenkins.svg";
+import mongodbIcon from "@/public/img/icons/mongodb.svg";
+import mssqlIcon from "@/public/img/icons/mssql.svg";
+import mysqlIcon from "@/public/img/icons/mysql.svg";
+import nextjsIcon from "@/public/img/icons/nextjs.svg";
+import nodejsIcon from "@/public/img/icons/nodejs.svg";
+import postgresqlIcon from "@/public/img/icons/postgresql.svg";
+import pythonIcon from "@/public/img/icons/python.svg";
+import reactIcon from "@/public/img/icons/react.svg";
+import springIcon from "@/public/img/icons/spring.svg";
+import sqliteIcon from "@/public/img/icons/sqlite.svg";
+import typescriptIcon from "@/public/img/icons/typescript.svg";
 
 export const NAV_ITEMS = [
   { name: "Home", href: "" },
   { name: "Experience", href: "#experience" },
-  { name: "Education", href: "#education" },
   { name: "Projects", href: "#projects" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
@@ -34,6 +60,18 @@ export const EXPERIENCES = [
     responsibilities: [],
   },
   {
+    title: "Honours B.Tech - Software Development",
+    company: "Seneca College",
+    img: senecaImg,
+    date: "Jan 2020 - Aug 2023",
+    location: "North York, ON",
+    responsibilities: [
+      "Cumulative GPA 3.9 / 4.0",
+      "Seneca College BSD Scholarship 2020 - 2023",
+      "Seneca College President's Honour List 2020 - 2023",
+    ],
+  },
+  {
     title: "Software Developer",
     company: "PAR Technology",
     img: parImg,
@@ -45,18 +83,6 @@ export const EXPERIENCES = [
       "Developed Data Visualization Dashboard (with Chart.js, Angular, Java, Spring Boot, MySQL)",
       "Revamped over 60% of front-end UI elements to support responsive layouts and consistent brand theming",
       "Gained exposure to Git, AWS EC2, RDS, Lambda, API Gateway, S3, and CI/CD pipelines with Jenkins",
-    ],
-  },
-  {
-    title: "Honours Bachelor of Technology - Software Development",
-    company: "Seneca College",
-    img: senecaImg,
-    date: "Jan 2020 - Aug 2023",
-    location: "North York, ON",
-    responsibilities: [
-      "Cumulative GPA: 3.9 / 4.0",
-      "Seneca College BSD Scholarship",
-      "Seneca College President's Honour List 2020 - 2023",
     ],
   },
 ];
@@ -221,6 +247,60 @@ export const PROJECTS = [
         type: "Work in Progress...",
         url: "",
       },
+    ],
+  },
+];
+
+export const SKILLS = [
+  {
+    title: "Frontend",
+    technologies: [
+      { name: "React", icon: reactIcon },
+      { name: "Next.js", icon: nextjsIcon },
+      { name: "Angular", icon: angularIcon },
+      { name: "JavaScript", icon: javascriptIcon },
+      { name: "TypeScript", icon: typescriptIcon },
+      // { name: "Redux", icon: reduxIcon },
+      { name: "HTML", icon: htmlIcon },
+      { name: "CSS", icon: cssIcon },
+    ],
+  },
+  {
+    title: "Backend",
+    technologies: [
+      { name: "C#", icon: csharpIcon },
+      // { name: ".NET", icon: dotnetIcon },
+      { name: "Java", icon: javaIcon },
+      { name: "Spring Boot", icon: springIcon },
+      { name: "Node.js", icon: nodejsIcon },
+      // { name: "Express", icon: expressIcon },
+      { name: "C++", icon: cppIcon },
+      { name: "Python", icon: pythonIcon },
+    ],
+  },
+  {
+    title: "Databases",
+    technologies: [
+      { name: "MySQL", icon: mysqlIcon },
+      { name: "PostgreSQL", icon: postgresqlIcon },
+      { name: "MS SQL Server", icon: mssqlIcon },
+      { name: "MongoDB", icon: mongodbIcon },
+      { name: "Firebase", icon: firebaseIcon },
+      // { name: "Redis", icon: redisIcon },
+      { name: "SQLite", icon: sqliteIcon },
+    ],
+  },
+  {
+    title: "DevOps",
+    technologies: [
+      { name: "Git", icon: gitIcon },
+      { name: "GitHub", icon: githubIcon },
+      { name: "AWS", icon: awsIcon },
+      // { name: "Azure", icon: azureIcon },
+      { name: "Jenkins", icon: jenkinsIcon },
+      { name: "GitHub Actions", icon: githubIcon },
+      { name: "Docker", icon: dockerIcon },
+      // { name: "Nginx", icon: nginxIcon },
     ],
   },
 ];

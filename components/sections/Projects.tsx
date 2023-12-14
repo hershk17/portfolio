@@ -15,10 +15,9 @@ import { PROJECTS } from "@/lib/constants";
 export const Projects = () => {
   return (
     <section id="projects">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-10">
         Projects
       </h1>
-      <h2>Some of the things I&apos;ve worked on</h2>
 
       <section className="flex flex-wrap gap-5">
         {PROJECTS.map((project, idx) => (

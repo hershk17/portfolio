@@ -4,7 +4,7 @@ import Image from "next/image";
 export const Experience = () => {
   return (
     <section id="experience">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         Experience
       </h1>
 

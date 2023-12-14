@@ -1,6 +1,5 @@
 import { About } from "@/components/sections/About";
 import { Contact } from "@/components/sections/Contact";
-import { Education } from "@/components/sections/Education";
 import { Experience } from "@/components/sections/Experience";
 import { Overview } from "@/components/sections/Overview";
 import { Projects } from "@/components/sections/Projects";
@@ -11,7 +10,6 @@ export const Main = () => {
     <main className="container">
       <Overview />
       <Experience />
-      <Education />
       <Projects />
       <About />
       <Skills />
