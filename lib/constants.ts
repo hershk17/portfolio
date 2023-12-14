@@ -14,31 +14,24 @@ import wordleImg from "@/public/img/screenshots/wordle.webp";
 import ceridianImg from "@/public/img/logos/ceridian.png";
 import parImg from "@/public/img/logos/par.svg";
 import senecaImg from "@/public/img/logos/seneca.png";
+import isbImg from "@/public/img/logos/isb.png";
 
 // Icon imports
-import angularIcon from "@/public/img/icons/angular.svg";
+import angularIcon from "@/public/img/icons/angular.png";
 import awsIcon from "@/public/img/icons/aws.svg";
 import cppIcon from "@/public/img/icons/cpp.svg";
 import csharpIcon from "@/public/img/icons/csharp.svg";
-import cssIcon from "@/public/img/icons/css.svg";
 import dockerIcon from "@/public/img/icons/docker.svg";
-import firebaseIcon from "@/public/img/icons/firebase.svg";
 import gitIcon from "@/public/img/icons/git.svg";
 import githubIcon from "@/public/img/icons/github.svg";
-import htmlIcon from "@/public/img/icons/html.svg";
 import javaIcon from "@/public/img/icons/java.svg";
-import javascriptIcon from "@/public/img/icons/javascript.svg";
-import jenkinsIcon from "@/public/img/icons/jenkins.svg";
 import mongodbIcon from "@/public/img/icons/mongodb.svg";
 import mssqlIcon from "@/public/img/icons/mssql.svg";
 import mysqlIcon from "@/public/img/icons/mysql.svg";
 import nextjsIcon from "@/public/img/icons/nextjs.svg";
 import nodejsIcon from "@/public/img/icons/nodejs.svg";
 import postgresqlIcon from "@/public/img/icons/postgresql.svg";
-import pythonIcon from "@/public/img/icons/python.svg";
 import reactIcon from "@/public/img/icons/react.svg";
-import springIcon from "@/public/img/icons/spring.svg";
-import sqliteIcon from "@/public/img/icons/sqlite.svg";
 import typescriptIcon from "@/public/img/icons/typescript.svg";
 
 export const NAV_ITEMS = [
@@ -55,28 +48,16 @@ export const EXPERIENCES = [
     title: "Software Developer",
     company: "Ceridian",
     img: ceridianImg,
-    date: "Jan 2024 - Present",
-    location: "North York, ON",
+    date: "January 2024 - Present",
+    location: "North York, Ontario, Canada",
     responsibilities: [],
-  },
-  {
-    title: "Honours B.Tech - Software Development",
-    company: "Seneca College",
-    img: senecaImg,
-    date: "Jan 2020 - Aug 2023",
-    location: "North York, ON",
-    responsibilities: [
-      "Cumulative GPA 3.9 / 4.0",
-      "Seneca College BSD Scholarship 2020 - 2023",
-      "Seneca College President's Honour List 2020 - 2023",
-    ],
   },
   {
     title: "Software Developer",
     company: "PAR Technology",
     img: parImg,
-    date: "May 2022 - Apr 2023",
-    location: "Markham, ON",
+    date: "May 2022 - April 2023",
+    location: "Markham, Ontario, Canada",
     responsibilities: [
       "Designed features, debugged issues, wrote unit tests, code reviews in Angular with VS Code, Jasmine, Jira",
       "Created, tested, and integrated REST APIs in Java / Spring Boot with Eclipse, JUnit, and Postman",
@@ -84,6 +65,26 @@ export const EXPERIENCES = [
       "Revamped over 60% of front-end UI elements to support responsive layouts and consistent brand theming",
       "Gained exposure to Git, AWS EC2, RDS, Lambda, API Gateway, S3, and CI/CD pipelines with Jenkins",
     ],
+  },
+  {
+    title: "Honours Bachelor of Technology - Software Development",
+    company: "Seneca College",
+    img: senecaImg,
+    date: "January 2020 - August 2023",
+    location: "North York, Ontario, Canada",
+    responsibilities: [
+      "Cumulative GPA 3.9 / 4.0",
+      "Seneca College BSD Scholarship 2020 - 2023",
+      "Seneca College President's Honour List 2020 - 2023",
+    ],
+  },
+  {
+    title: "High School Diploma - Computer Science",
+    company: "The Indian School, Bahrain",
+    img: isbImg,
+    date: "March 2019",
+    location: "Isa Town, Kingdom of Bahrain",
+    responsibilities: [],
   },
 ];
 
@@ -255,52 +256,37 @@ export const SKILLS = [
   {
     title: "Frontend",
     technologies: [
-      { name: "React", icon: reactIcon },
-      { name: "Next.js", icon: nextjsIcon },
-      { name: "Angular", icon: angularIcon },
-      { name: "JavaScript", icon: javascriptIcon },
-      { name: "TypeScript", icon: typescriptIcon },
-      // { name: "Redux", icon: reduxIcon },
-      { name: "HTML", icon: htmlIcon },
-      { name: "CSS", icon: cssIcon },
+      { name: "React", icon: reactIcon, experience: 95 },
+      { name: "TypeScript", icon: typescriptIcon, experience: 95 },
+      { name: "Next.js", icon: nextjsIcon, experience: 90 },
+      { name: "Angular", icon: angularIcon, experience: 80 },
     ],
   },
   {
     title: "Backend",
     technologies: [
-      { name: "C#", icon: csharpIcon },
-      // { name: ".NET", icon: dotnetIcon },
-      { name: "Java", icon: javaIcon },
-      { name: "Spring Boot", icon: springIcon },
-      { name: "Node.js", icon: nodejsIcon },
-      // { name: "Express", icon: expressIcon },
-      { name: "C++", icon: cppIcon },
-      { name: "Python", icon: pythonIcon },
+      { name: ".NET/C#", icon: csharpIcon, experience: 95 },
+      { name: "Java", icon: javaIcon, experience: 90 },
+      { name: "Node.js", icon: nodejsIcon, experience: 80 },
+      { name: "C++", icon: cppIcon, experience: 75 },
     ],
   },
   {
     title: "Databases",
     technologies: [
-      { name: "MySQL", icon: mysqlIcon },
-      { name: "PostgreSQL", icon: postgresqlIcon },
-      { name: "MS SQL Server", icon: mssqlIcon },
-      { name: "MongoDB", icon: mongodbIcon },
-      { name: "Firebase", icon: firebaseIcon },
-      // { name: "Redis", icon: redisIcon },
-      { name: "SQLite", icon: sqliteIcon },
+      { name: "PostgreSQL", icon: postgresqlIcon, experience: 95 },
+      { name: "MS SQL", icon: mssqlIcon, experience: 90 },
+      { name: "MySQL", icon: mysqlIcon, experience: 85 },
+      { name: "MongoDB", icon: mongodbIcon, experience: 80 },
     ],
   },
   {
     title: "DevOps",
     technologies: [
-      { name: "Git", icon: gitIcon },
-      { name: "GitHub", icon: githubIcon },
-      { name: "AWS", icon: awsIcon },
-      // { name: "Azure", icon: azureIcon },
-      { name: "Jenkins", icon: jenkinsIcon },
-      { name: "GitHub Actions", icon: githubIcon },
-      { name: "Docker", icon: dockerIcon },
-      // { name: "Nginx", icon: nginxIcon },
+      { name: "Git", icon: gitIcon, experience: 95 },
+      { name: "AWS", icon: awsIcon, experience: 90 },
+      { name: "Actions", icon: githubIcon, experience: 85 },
+      { name: "Docker", icon: dockerIcon, experience: 85 },
     ],
   },
 ];
