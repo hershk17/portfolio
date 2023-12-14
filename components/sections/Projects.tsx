@@ -191,7 +191,7 @@ export const Projects = () => {
       <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
         Projects
       </h1>
-      <h2>Some of the things I've worked on</h2>
+      <h2>Some of the things I&apos;ve worked on</h2>
 
       <section className="flex flex-wrap gap-5">
         {PROJECTS.map((project, idx) => (
