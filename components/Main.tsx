@@ -8,7 +8,7 @@ import { Skills } from "@/components/sections/Skills";
 
 export const Main = () => {
   return (
-    <main>
+    <main className="container">
       <Overview />
       <Experience />
       <Education />

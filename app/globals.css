@@ -52,6 +52,8 @@
 @layer base {
   * {
     @apply border-border;
+    @apply scroll-smooth;
+    @apply transition-all;
   }
   body {
     @apply bg-background text-foreground;

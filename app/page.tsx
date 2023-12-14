@@ -1,6 +1,6 @@
-import { Footer } from "@/components/base/Footer";
-import { Header } from "@/components/base/Header";
-import { Main } from "@/components/base/Main";
+import { Footer } from "@/components/Footer";
+import { Header } from "@/components/Header";
+import { Main } from "@/components/Main";
 
 export default function Home() {
   return (

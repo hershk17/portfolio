@@ -20,6 +20,7 @@ import portfolioImg from "../../public/img/portfolio.webp";
 import snlImg from "../../public/img/snl.webp";
 import weatherWidgetImg from "../../public/img/weather-widget.webp";
 import wordleImg from "../../public/img/wordle.webp";
+import { useLayoutEffect } from "react";
 
 const PROJECTS = [
   {
