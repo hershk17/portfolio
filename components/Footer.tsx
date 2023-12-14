@@ -1,3 +1,10 @@
 export const Footer = () => {
-  return <footer>Footer</footer>;
+  return (
+    <footer className="bg-primary text-white/90 mt-16">
+      <section className="container h-24 flex justify-between items-center">
+        <p>&#169; Harsh K, 2022</p>
+        <p>built with Next.js</p>
+      </section>
+    </footer>
+  );
 };

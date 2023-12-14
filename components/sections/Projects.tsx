@@ -1,195 +1,21 @@
-import { CodeIcon, ExternalLinkIcon, PlayIcon } from "@radix-ui/react-icons";
-import Image from "next/image";
-import Link from "next/link";
-import { buttonVariants } from "../ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "../ui/card";
+} from "@/components/ui/card";
+import { CodeIcon, ExternalLinkIcon, PlayIcon } from "@radix-ui/react-icons";
+import Image from "next/image";
+import Link from "next/link";
 
-import blockchainWalletImg from "../../public/img/blockchain-wallet.webp";
-import eventureImg from "../../public/img/eventure.webp";
-import libraryImg from "../../public/img/library.webp";
-import mailImg from "../../public/img/mail.webp";
-import movieSpaceImg from "../../public/img/movie-space.webp";
-import policyPlannerImg from "../../public/img/policy-planner.webp";
-import portfolioImg from "../../public/img/portfolio.webp";
-import snlImg from "../../public/img/snl.webp";
-import weatherWidgetImg from "../../public/img/weather-widget.webp";
-import wordleImg from "../../public/img/wordle.webp";
-import { useLayoutEffect } from "react";
-
-const PROJECTS = [
-  {
-    title: "Blockchain Wallet",
-    img: blockchainWalletImg,
-    desc: "A web-based digital banking and wallet application for the Banano cryptocurrency.",
-    stack: [
-      "Java",
-      "Spring Boot",
-      "Spring Security",
-      "PostgreSQL",
-      "Thymeleaf",
-      "Docker",
-    ],
-    links: [
-      {
-        type: "Demo",
-        url: "https://www.youtube.com/watch?v=uKlhKMTh05k",
-      },
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/banano-wallet-web-app",
-      },
-    ],
-  },
-  {
-    title: "Policy Planner",
-    img: policyPlannerImg,
-    desc: "A web-based application for calculating vehicle insurance premiums.",
-    stack: [
-      "Java",
-      "Spring Boot",
-      "Angular",
-      "Typescript",
-      "HTML/CSS",
-      "Azure",
-    ],
-    links: [
-      {
-        type: "Live",
-        url: "https://policy-planner.vercel.app/home",
-      },
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/insurance-calculator",
-      },
-    ],
-  },
-  {
-    title: "Movie Space",
-    img: movieSpaceImg,
-    desc: "A cross-platform application for movie browsing, searching, and creating watchlists.",
-    stack: [
-      "Angular",
-      "TypeScript",
-      "HTML/CSS",
-      "Ionic",
-      "SQLite",
-      "Google Play",
-    ],
-    links: [
-      {
-        type: "Live",
-        url: "https://play.google.com/store/apps/details?id=com.dps926.moviespace",
-      },
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/movie-space-ionic-app",
-      },
-    ],
-  },
-  {
-    title: "Eventure",
-    img: eventureImg,
-    desc: "A cross-platform social media application with an emphasis on organizing and attending events.",
-    stack: ["Angular", "TypeScript", "HTML/CSS", "Ionic", "Firebase"],
-    links: [
-      {
-        type: "Demo",
-        url: "https://www.youtube.com/watch?v=r-ZLR86G9oo",
-      },
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/capstone-events-app",
-      },
-    ],
-  },
-  {
-    title: "Weather Widget",
-    img: weatherWidgetImg,
-    desc: "A web-based application for viewing detailed weather information for any location.",
-    stack: ["React", "JavaScript", "HTML/CSS", "Bootstap", "Vercel"],
-    links: [
-      {
-        type: "Live",
-        url: "https://weatherite.vercel.app/",
-      },
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/weather-web-app",
-      },
-    ],
-  },
-  {
-    title: "Personal Portfolio",
-    img: portfolioImg,
-    desc: "A web-based application showcasing my skills, goals, and projects.",
-    stack: ["React", "JavaScript", "HTML/CSS", "MUI", "Firebase"],
-    links: [
-      {
-        type: "GitHub",
-        url: "",
-      },
-    ],
-  },
-  {
-    title: "Library Manager",
-    img: libraryImg,
-    desc: "A desktop application for tracking and managing library resources.",
-    stack: ["Java", "JavaFX", "PostgreSQL"],
-    links: [
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/library-manager-app",
-      },
-    ],
-  },
-  {
-    title: "Mailbox Manager",
-    img: mailImg,
-    stack: ["Qt", "C++"],
-    desc: "A desktop application for sending, receiving, and deleting emails.",
-    links: [
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/desktop-mail-app",
-      },
-    ],
-  },
-  {
-    title: "Snakes and Ladders",
-    img: snlImg,
-    stack: ["C++"],
-    desc: "A terminal-based version of the popular Snakes and Ladders board game.",
-    links: [
-      {
-        type: "GitHub",
-        url: "https://github.com/hershk17/snl-terminal-app",
-      },
-    ],
-  },
-  {
-    title: "Wordle Clone",
-    img: wordleImg,
-    techstack: ["React", "JavaScript", "HTML/CSS"],
-    desc: "A simple word game inspired by the popular browser game 'Wordle'.",
-    links: [
-      {
-        type: "Work in Progress...",
-        url: "",
-      },
-    ],
-  },
-];
+import { PROJECTS } from "@/lib/constants";
 
 export const Projects = () => {
   return (
     <section id="projects">
-      <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-6xl">
         Projects
       </h1>
       <h2>Some of the things I&apos;ve worked on</h2>
@@ -232,6 +58,27 @@ export const Projects = () => {
                     </p>
                   </Link>
                 ))}
+                {/* <a
+                  href="#"
+                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                >
+                  Learn more{" "}
+                  <svg
+                    className="w-3 h-3 ms-2 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 14 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5h12m0 0L9 1m4 4L9 9"
+                    />
+                  </svg>
+                </a> */}
               </CardFooter>
             </Card>
           </article>
