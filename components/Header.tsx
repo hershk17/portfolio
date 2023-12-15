@@ -17,7 +17,7 @@ import { Button } from "./ui/button";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-50 h-20 flex items-center border-b bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 h-16 md:h-20 flex items-center border-b bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-14 items-center justify-between">
         <Link href="/" className="text-lg">
           Harsh K
