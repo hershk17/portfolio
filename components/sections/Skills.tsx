@@ -15,24 +15,24 @@ export const Skills = () => {
         Skills
       </h1>
 
-      <section className="flex flex-wrap lg:grid lg:grid-cols-2 mt-10 gap-6">
+      <section className="flex flex-wrap md:grid md:grid-cols-2 mt-10 gap-6">
         {SKILLS.map((skill, idx) => (
-          <Card key={idx}>
+          <Card key={idx} className="w-full md:w-auto">
             <CardHeader>
               <CardTitle>{skill.title}</CardTitle>
               {/* <CardDescription>Card Description</CardDescription> */}
             </CardHeader>
             <CardContent>
-              <ul className="flex justify-between space-x-6 my-4">
+              <ul className="flex justify-around space-x-6 my-4">
                 {skill.technologies.map((technology, idx) => (
                   <li
                     key={idx}
-                    className="flex flex-col items-center justify-center w-16 lg:w-24"
+                    className="flex flex-col items-center justify-center md:w-16 lg:w-24 "
                   >
                     <Image
                       src={technology.icon}
                       alt={technology.name}
-                      className="w-10 lg:w-14"
+                      className="w-14"
                     />
                     <p className="mt-1 mb-2">{technology.name}</p>
                     <Progress

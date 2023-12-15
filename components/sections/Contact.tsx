@@ -103,7 +103,7 @@ export const Contact = () => {
           </form>
         </Form>
 
-        <section className="flex flex-col gap-4 md:mt-5">
+        <section className="flex flex-col gap-5 md:mt-5">
           {LINKS.map((link, idx) => (
             <Link key={idx} href={link.href}>
               <Button variant="ghost" className="h-16 flex items-start gap-3">
