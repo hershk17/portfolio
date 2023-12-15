@@ -8,7 +8,6 @@ import policyPlannerImg from "@/public/img/screenshots/policy-planner.webp";
 import portfolioImg from "@/public/img/screenshots/portfolio.webp";
 import snlImg from "@/public/img/screenshots/snl.webp";
 import weatherWidgetImg from "@/public/img/screenshots/weather-widget.webp";
-import wordleImg from "@/public/img/screenshots/wordle.webp";
 
 // Logo imports
 import ceridianImg from "@/public/img/logos/ceridian.png";
@@ -36,13 +35,22 @@ import postgresqlIcon from "@/public/img/icons/postgresql.svg";
 import reactIcon from "@/public/img/icons/react.svg";
 import typescriptIcon from "@/public/img/icons/typescript.svg";
 
+import {
+  CodeIcon,
+  EnvelopeClosedIcon,
+  HomeIcon,
+  LightningBoltIcon,
+  PersonIcon,
+} from "@radix-ui/react-icons";
+import { BackpackIcon } from "lucide-react";
+
 export const NAV_ITEMS = [
-  { name: "Home", href: "" },
-  { name: "About", href: "#about" },
-  { name: "Experience", href: "#experience" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "", icon: HomeIcon },
+  { name: "About", href: "#about", icon: PersonIcon },
+  { name: "Experience", href: "#experience", icon: BackpackIcon },
+  { name: "Skills", href: "#skills", icon: LightningBoltIcon },
+  { name: "Projects", href: "#projects", icon: CodeIcon },
+  { name: "Contact", href: "#contact", icon: EnvelopeClosedIcon },
 ];
 
 export const EXPERIENCES = [

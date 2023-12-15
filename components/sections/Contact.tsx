@@ -55,7 +55,7 @@ export const Contact = () => {
 
   return (
     <section id="contact">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
+      <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Contact
       </h1>
 
