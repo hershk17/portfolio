@@ -7,12 +7,12 @@ import { Skills } from "@/components/sections/Skills";
 
 export const Main = () => {
   return (
-    <main className="container space-y-24 overflow-auto scroll-pt-24">
+    <main className="container overflow-auto scroll-pt-24 space-y-28">
       <Overview />
-      <Experience />
-      <Projects />
       <About />
+      <Experience />
       <Skills />
+      <Projects />
       <Contact />
     </main>
   );

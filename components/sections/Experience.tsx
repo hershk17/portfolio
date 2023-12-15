@@ -9,15 +9,13 @@ export const Experience = () => {
         Experience
       </h1>
 
-      <ol className="relative border-s border-violet-100 dark:border-violet-900 pt-1 ml-1">
+      <ol className="relative border-s border-violet-100 dark:border-violet-900 space-y-14">
         {EXPERIENCES.map((experience, idx) => (
-          <li key={idx} className="mb-14 ms-4 ml-10">
+          <li key={idx} className="ms-4 ml-10">
             <div
               className={cn(
                 "absolute rounded-full w-3 h-3 mt-1.5 -start-1.5",
-                idx === 0
-                  ? "bg-violet-500"
-                  : "bg-violet-200 dark:bg-violet-900"
+                idx === 0 ? "bg-violet-500" : "bg-violet-200 dark:bg-violet-900"
               )}
             ></div>
             <Image
@@ -31,7 +29,7 @@ export const Experience = () => {
             <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
               {experience.date}
             </time>
-            <ul className="mt-3">
+            <ul className="mt-3 list-disc ml-4">
               {experience.responsibilities.map((responsibility, idx) => (
                 <li key={idx}>{responsibility}</li>
               ))}
