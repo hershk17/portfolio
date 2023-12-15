@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 
@@ -8,9 +8,15 @@ import { Progress } from "@/components/ui/progress";
 import { SKILLS } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 export const Skills = () => {
-  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <section id="skills">
@@ -23,7 +29,6 @@ export const Skills = () => {
           <Card key={idx} className="w-full md:w-auto">
             <CardHeader>
               <CardTitle>{skill.title}</CardTitle>
-              {/* <CardDescription>Card Description</CardDescription> */}
             </CardHeader>
             <CardContent>
               <ul className="flex justify-around space-x-6 my-4">
@@ -37,7 +42,9 @@ export const Skills = () => {
                       alt={technology.name}
                       className={cn(
                         "w-14",
-                        theme === "dark" && technology.invert && "invert"
+                        mounted && resolvedTheme === "dark" &&
+                          technology.invert &&
+                          "invert"
                       )}
                     />
                     <p className="mt-1 mb-2">{technology.name}</p>
