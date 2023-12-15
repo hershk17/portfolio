@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="overflow-auto scroll-pt-24">
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

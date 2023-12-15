@@ -10,14 +10,17 @@ import { CodeIcon, ExternalLinkIcon, PlayIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
-import { PROJECTS } from "@/lib/constants";
+import { PROJECTS } from "@/lib/data";
 
 export const Projects = () => {
   return (
     <section id="projects">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-10">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         Projects
       </h1>
+      <h2 className="mt-2 mb-10">
+        Some of the things I&#39;ve worked on
+      </h2>
 
       <section className="flex flex-wrap gap-5">
         {PROJECTS.map((project, idx) => (

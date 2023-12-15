@@ -252,6 +252,40 @@ export const PROJECTS = [
   },
 ];
 
+export const ABOUT = [
+  {
+    id: "01",
+    title: "Who I Am",
+    paragraphs: [
+      "Hi, my name's Harsh.",
+      "I have a bachelors degree in Software Development from Seneca College and a passion for full stack development.",
+    ],
+  },
+  {
+    id: "02",
+    title: "What I Do",
+    paragraphs: [
+      "I'm currently seeking full time opportunities to apply my skillset for solving real world problems and building seamless user experiences.",
+      "In my free time, I enjoy travelling, photography, football, video games and learning more about Software Development.",
+    ],
+  },
+  {
+    id: "03",
+    title: "My Passion",
+    paragraphs: [
+      "When I first took up Computer Science in 11th grade, I knew it was exactly what I wanted to do! Ever since then, I have strived to further my career by consistently trying to challenge myself and reach new heights.",
+      "After completing my bachelor's degree, I have gained substantial knowledge of software development and my love for the industry continues to grow.",
+    ],
+  },
+  {
+    id: "04",
+    title: "My Goals",
+    paragraphs: [
+      "My goal is to become a skilled Software Developer capable of making meaningful contributions in the industry. The possibilities are truly exciting, and I look forward to what the future holds.",
+    ],
+  },
+];
+
 export const SKILLS = [
   {
     title: "Frontend",
@@ -275,9 +309,9 @@ export const SKILLS = [
     title: "Databases",
     technologies: [
       { name: "PostgreSQL", icon: postgresqlIcon, experience: 95 },
-      { name: "MS SQL", icon: mssqlIcon, experience: 90 },
+      { name: "MSSQL", icon: mssqlIcon, experience: 90 },
       { name: "MySQL", icon: mysqlIcon, experience: 85 },
-      { name: "MongoDB", icon: mongodbIcon, experience: 80 },
+      { name: "Mongo", icon: mongodbIcon, experience: 80 },
     ],
   },
   {

@@ -11,12 +11,12 @@ import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
 import { ThemeToggle } from "@/components/ThemeToggle";
-import { NAV_ITEMS } from "@/lib/constants";
+import { NAV_ITEMS } from "@/lib/data";
 import { Button } from "./ui/button";
 
 export const Header = () => {
   return (
-    <header className="sticky top-0 z-50 h-16 md:h-20 flex items-center border-b bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
+    <header className="sticky top-0 z-50 h-20 flex items-center border-b bg-background/95 backdrop-blur-xl supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-14 items-center justify-between">
         <Link href="/">Harsh K</Link>
         <nav className="flex-1 justify-end items-center text-sm space-x-8 font-medium mx-4 hidden md:flex">

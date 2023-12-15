@@ -1,13 +1,12 @@
-import { SKILLS } from "@/lib/constants";
+import { SKILLS } from "@/lib/data";
 import Image from "next/image";
-import { Progress } from "../ui/progress";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
-  CardTitle,
+  CardTitle
 } from "../ui/card";
+import { Progress } from "../ui/progress";
 
 export const Skills = () => {
   return (
@@ -15,27 +14,28 @@ export const Skills = () => {
       <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         Skills
       </h1>
-      <h2>Here&#39;s a snapshot of my proficiency in different technologies</h2>
+      <h2 className="mt-2 mb-10">
+        Here&#39;s my proficiency in different technologies
+      </h2>
 
-      <section className="flex flex-wrap mt-10 gap-6">
+      <section className="flex flex-wrap lg:grid lg:grid-cols-2 mt-10 gap-6">
         {SKILLS.map((skill, idx) => (
-          <Card key={idx} className="max-w-[500px]">
+          <Card key={idx}>
             <CardHeader>
               <CardTitle>{skill.title}</CardTitle>
               {/* <CardDescription>Card Description</CardDescription> */}
             </CardHeader>
             <CardContent>
-              <ul className="flex space-x-6">
+              <ul className="flex justify-between space-x-6">
                 {skill.technologies.map((technology, idx) => (
                   <li
                     key={idx}
-                    className="flex flex-col items-center justify-center w-24"
+                    className="flex flex-col items-center justify-center w-16 lg:w-24"
                   >
                     <Image
                       src={technology.icon}
                       alt={technology.name}
-                      width={56}
-                      height={56}
+                      className="w-10 lg:w-14"
                     />
                     <p className="mt-1 mb-2">{technology.name}</p>
                     <Progress
