@@ -1,37 +1,37 @@
 // Screenshot imports
-import blockchainWalletImg from "@/public/img/screenshots/blockchain-wallet.webp";
-import eventureImg from "@/public/img/screenshots/eventure.webp";
-import libraryImg from "@/public/img/screenshots/library.webp";
-import mailImg from "@/public/img/screenshots/mail.webp";
-import movieSpaceImg from "@/public/img/screenshots/movie-space.webp";
-import policyPlannerImg from "@/public/img/screenshots/policy-planner.webp";
-import portfolioImg from "@/public/img/screenshots/portfolio.webp";
-import snlImg from "@/public/img/screenshots/snl.webp";
-import weatherWidgetImg from "@/public/img/screenshots/weather-widget.webp";
+import blockchainWalletImg from "@/public/screenshots/blockchain-wallet.webp";
+import eventureImg from "@/public/screenshots/eventure.webp";
+import libraryImg from "@/public/screenshots/library.webp";
+import mailImg from "@/public/screenshots/mail.webp";
+import movieSpaceImg from "@/public/screenshots/movie-space.webp";
+import policyPlannerImg from "@/public/screenshots/policy-planner.webp";
+import portfolioImg from "@/public/screenshots/portfolio.webp";
+import snlImg from "@/public/screenshots/snl.webp";
+import weatherWidgetImg from "@/public/screenshots/weather-widget.webp";
 
 // Logo imports
-import ceridianImg from "@/public/img/logos/ceridian.png";
-import isbImg from "@/public/img/logos/isb.png";
-import parImg from "@/public/img/logos/par.svg";
-import senecaImg from "@/public/img/logos/seneca.png";
+import ceridianImg from "@/public/logos/ceridian.png";
+import isbImg from "@/public/logos/isb.png";
+import parImg from "@/public/logos/par.webp";
+import senecaImg from "@/public/logos/seneca.png";
 
 // Icon imports
-import angularIcon from "@/public/img/icons/angular.png";
-import awsIcon from "@/public/img/icons/aws.svg";
-import cppIcon from "@/public/img/icons/cpp.svg";
-import csharpIcon from "@/public/img/icons/csharp.svg";
-import dockerIcon from "@/public/img/icons/docker.svg";
-import gitIcon from "@/public/img/icons/git.svg";
-import githubIcon from "@/public/img/icons/github.svg";
-import javaIcon from "@/public/img/icons/java.svg";
-import mongodbIcon from "@/public/img/icons/mongodb.svg";
-import mssqlIcon from "@/public/img/icons/mssql.svg";
-import mysqlIcon from "@/public/img/icons/mysql.svg";
-import nextjsIcon from "@/public/img/icons/nextjs.svg";
-import nodejsIcon from "@/public/img/icons/nodejs.svg";
-import postgresqlIcon from "@/public/img/icons/postgresql.svg";
-import reactIcon from "@/public/img/icons/react.svg";
-import typescriptIcon from "@/public/img/icons/typescript.svg";
+import angularIcon from "@/public/icons/angular.png";
+import awsIcon from "@/public/icons/aws.svg";
+import cppIcon from "@/public/icons/cpp.svg";
+import csharpIcon from "@/public/icons/csharp.svg";
+import dockerIcon from "@/public/icons/docker.svg";
+import gitIcon from "@/public/icons/git.svg";
+import githubIcon from "@/public/icons/github.svg";
+import javaIcon from "@/public/icons/java.svg";
+import mongodbIcon from "@/public/icons/mongodb.svg";
+import mssqlIcon from "@/public/icons/mssql.svg";
+import mysqlIcon from "@/public/icons/mysql.svg";
+import nextjsIcon from "@/public/icons/nextjs.svg";
+import nodejsIcon from "@/public/icons/nodejs.svg";
+import postgresqlIcon from "@/public/icons/postgresql.svg";
+import reactIcon from "@/public/icons/react.svg";
+import typescriptIcon from "@/public/icons/typescript.svg";
 
 import {
   CodeIcon,
@@ -66,6 +66,7 @@ export const EXPERIENCES = [
     title: "Software Developer",
     company: "PAR Technology",
     img: parImg,
+    invert: true,
     date: "May 2022 - April 2023",
     location: "Markham, Ontario, Canada",
     responsibilities: [
@@ -92,6 +93,7 @@ export const EXPERIENCES = [
     title: "High School Diploma - Computer Science",
     company: "The Indian School, Bahrain",
     img: isbImg,
+    invert: true,
     date: "March 2019",
     location: "Isa Town, Kingdom of Bahrain",
     responsibilities: [],

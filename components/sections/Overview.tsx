@@ -8,7 +8,7 @@ import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 
-import pfp from "@/public/img/logos/pfp.webp";
+import pfp from "@/public/logos/pfp.webp";
 
 export const Overview = () => {
   return (

@@ -23,8 +23,7 @@ export const Experience = () => {
               <Image
                 src={experience.img}
                 alt={experience.company}
-                height={40}
-                className="max-w-[200px] mt-3 mb-5"
+                className="w-auto h-auto max-w-[200px] max-h-[40px] mt-3 mb-5"
               />
               <h2 className="text-xl font-semibold">{experience.title}</h2>
               <h3>{experience.location}</h3>
