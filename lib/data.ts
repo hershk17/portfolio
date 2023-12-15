@@ -220,7 +220,7 @@ export const PROJECTS = [
     title: "Mailbox Manager",
     img: mailImg,
     stack: ["Qt", "C++"],
-    desc: "A desktop application for sending, receiving, and deleting emails.",
+    desc: "A desktop application for managing emails.",
     links: [
       {
         type: "GitHub",

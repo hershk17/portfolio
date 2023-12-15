@@ -14,10 +14,10 @@ export const Experience = () => {
           <li key={idx} className="mb-14 ms-4 ml-10">
             <div
               className={cn(
-                "absolute rounded-full ",
+                "absolute rounded-full w-3 h-3 mt-1.5 -start-1.5",
                 idx === 0
-                  ? "w-4 h-4 mt-2 -start-2 bg-primary dark:bg-violet-500"
-                  : "w-3 h-3 mt-1.5 -start-1.5 bg-violet-200 dark:bg-violet-900"
+                  ? "bg-violet-500"
+                  : "bg-violet-200 dark:bg-violet-900"
               )}
             ></div>
             <Image

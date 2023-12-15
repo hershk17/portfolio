@@ -25,7 +25,7 @@ export const Projects = () => {
 
       <section className="flex flex-wrap gap-5">
         {PROJECTS.map((project, idx) => (
-          <article key={idx} className="w-72">
+          <article key={idx} className="sm:w-[275px]">
             <Card>
               <Image
                 src={project.img}
