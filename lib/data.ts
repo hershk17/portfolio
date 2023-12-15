@@ -359,7 +359,7 @@ export const LINKS = [
   {
     title: "LinkedIn",
     description: "Harsh Keswani",
-    href: "https://www.linkedin.com/in/hershk17/",
+    href: "https://www.linkedin.com/in/harsh-keswani/",
     icon: LinkedInLogoIcon,
   },
   {
