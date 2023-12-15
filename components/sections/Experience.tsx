@@ -12,7 +12,7 @@ export const Experience = () => {
 
       <ol className="relative border-s border-violet-100 dark:border-violet-900 space-y-14">
         {EXPERIENCES.map((experience, idx) => (
-          <li key={idx} className="ms-4 ml-10">
+          <li key={idx} className="ms-4 ml-8">
             <div
               className={cn(
                 "absolute rounded-full w-3 h-3 mt-1.5 -start-1.5",
