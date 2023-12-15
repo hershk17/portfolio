@@ -1,10 +1,11 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 import { useTheme } from "next-themes";
 
-export function ThemeToggle() {
+import { Button } from "@/components/ui/button";
+
+export function ToggleTheme() {
   const { theme, setTheme } = useTheme();
 
   return (

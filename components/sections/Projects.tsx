@@ -1,3 +1,11 @@
+import {
+  ExternalLinkIcon,
+  GitHubLogoIcon,
+  PlayIcon,
+} from "@radix-ui/react-icons";
+import Image from "next/image";
+import Link from "next/link";
+
 import { buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -6,13 +14,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  ExternalLinkIcon,
-  GitHubLogoIcon,
-  PlayIcon
-} from "@radix-ui/react-icons";
-import Image from "next/image";
-import Link from "next/link";
 
 import { PROJECTS } from "@/lib/data";
 

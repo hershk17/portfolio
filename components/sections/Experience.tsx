@@ -1,6 +1,7 @@
+import Image from "next/image";
+
 import { EXPERIENCES } from "@/lib/data";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
 
 export const Experience = () => {
   return (

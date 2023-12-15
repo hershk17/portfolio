@@ -1,12 +1,14 @@
-import pfp from "@/public/img/logos/pfp.webp";
 import {
   ClipboardIcon,
   EnvelopeClosedIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
 import Image from "next/image";
-import { Button } from "../ui/button";
 import Link from "next/link";
+
+import { Button } from "@/components/ui/button";
+
+import pfp from "@/public/img/logos/pfp.webp";
 
 export const Overview = () => {
   return (

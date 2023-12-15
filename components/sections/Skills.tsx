@@ -1,12 +1,9 @@
-import { SKILLS } from "@/lib/data";
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle
-} from "../ui/card";
-import { Progress } from "../ui/progress";
+
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Progress } from "@/components/ui/progress";
+
+import { SKILLS } from "@/lib/data";
 
 export const Skills = () => {
   return (
