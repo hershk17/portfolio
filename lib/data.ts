@@ -21,11 +21,9 @@ import awsIcon from "@/public/img/icons/aws.svg";
 import cppIcon from "@/public/img/icons/cpp.svg";
 import csharpIcon from "@/public/img/icons/csharp.svg";
 import dockerIcon from "@/public/img/icons/docker.svg";
-import emailIcon from "@/public/img/icons/email.svg";
 import gitIcon from "@/public/img/icons/git.svg";
 import githubIcon from "@/public/img/icons/github.svg";
 import javaIcon from "@/public/img/icons/java.svg";
-import linkedinIcon from "@/public/img/icons/linkedin.svg";
 import mongodbIcon from "@/public/img/icons/mongodb.svg";
 import mssqlIcon from "@/public/img/icons/mssql.svg";
 import mysqlIcon from "@/public/img/icons/mysql.svg";
@@ -38,8 +36,10 @@ import typescriptIcon from "@/public/img/icons/typescript.svg";
 import {
   CodeIcon,
   EnvelopeClosedIcon,
+  GitHubLogoIcon,
   HomeIcon,
   LightningBoltIcon,
+  LinkedInLogoIcon,
   PersonIcon,
 } from "@radix-ui/react-icons";
 import { BackpackIcon } from "lucide-react";
@@ -295,7 +295,7 @@ export const SKILLS = [
     technologies: [
       { name: "React", icon: reactIcon, experience: 95 },
       { name: "TypeScript", icon: typescriptIcon, experience: 95 },
-      { name: "Next.js", icon: nextjsIcon, experience: 90 },
+      { name: "Next.js", icon: nextjsIcon, experience: 90, invert: true },
       { name: "Angular", icon: angularIcon, experience: 80 },
     ],
   },
@@ -321,8 +321,8 @@ export const SKILLS = [
     title: "DevOps",
     technologies: [
       { name: "Git", icon: gitIcon, experience: 95 },
-      { name: "AWS", icon: awsIcon, experience: 90 },
-      { name: "Actions", icon: githubIcon, experience: 85 },
+      { name: "AWS", icon: awsIcon, experience: 90, invert: true },
+      { name: "Actions", icon: githubIcon, experience: 85, invert: true },
       { name: "Docker", icon: dockerIcon, experience: 85 },
     ],
   },
@@ -333,18 +333,18 @@ export const LINKS = [
     title: "Email",
     description: "hersh.k17@gmail.com",
     href: "mailto:hersh.k17@gmail.com",
-    icon: emailIcon,
+    icon: EnvelopeClosedIcon,
   },
   {
     title: "LinkedIn",
     description: "Harsh Keswani",
     href: "https://www.linkedin.com/in/hershk17/",
-    icon: linkedinIcon,
+    icon: LinkedInLogoIcon,
   },
   {
     title: "GitHub",
     description: "hershk17",
     href: "https://github.com/hershk17",
-    icon: githubIcon,
+    icon: GitHubLogoIcon,
   },
 ];

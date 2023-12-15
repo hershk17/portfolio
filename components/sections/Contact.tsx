@@ -16,25 +16,22 @@ export const Contact = () => {
       <section className="md:flex gap-20">
         <ContactForm />
         <section className="flex flex-col gap-4 mt-12 md:mt-5">
-          {LINKS.map((link, idx) => (
-            <Link key={idx} href={link.href} target="_blank">
-              <Button variant="ghost" className="h-16 flex items-start gap-3">
-                <Image
-                  src={link.icon}
-                  alt={link.title}
-                  height={20}
-                  width={20}
-                  className="mt-1"
-                />
-                <div className="flex flex-col items-start">
-                  <span className="text-xl">{link.title}</span>
-                  <span className="text-gray-400 dark:text-gray-500">
-                    {link.description}
-                  </span>
-                </div>
-              </Button>
-            </Link>
-          ))}
+          {LINKS.map((link, idx) => {
+            const Icon = link.icon;
+            return (
+              <Link key={idx} href={link.href} target="_blank">
+                <Button variant="ghost" className="h-16 flex items-start gap-3">
+                  <Icon className="h-5 w-5 mt-1" />
+                  <div className="flex flex-col items-start">
+                    <span className="text-xl">{link.title}</span>
+                    <span className="text-gray-400 dark:text-gray-500">
+                      {link.description}
+                    </span>
+                  </div>
+                </Button>
+              </Link>
+            );
+          })}
         </section>
       </section>
     </section>

@@ -1,11 +1,17 @@
+"use client"
+
 import Image from "next/image";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 
 import { SKILLS } from "@/lib/data";
+import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 export const Skills = () => {
+  const { theme } = useTheme();
+
   return (
     <section id="skills">
       <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
@@ -29,7 +35,10 @@ export const Skills = () => {
                     <Image
                       src={technology.icon}
                       alt={technology.name}
-                      className="w-14"
+                      className={cn(
+                        "w-14",
+                        theme === "dark" && technology.invert && "invert"
+                      )}
                     />
                     <p className="mt-1 mb-2">{technology.name}</p>
                     <Progress
