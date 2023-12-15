@@ -59,11 +59,11 @@ export const Contact = () => {
         Contact
       </h1>
 
-      <section className="flex flex-wrap gap-20">
+      <section className="md:flex gap-20">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-8 w-[450px] max-w-[85dvw]"
+            className="space-y-8 md:w-[450px]"
           >
             <FormField
               control={form.control}
@@ -103,7 +103,7 @@ export const Contact = () => {
           </form>
         </Form>
 
-        <section className="flex flex-col gap-5 md:mt-5">
+        <section className="flex flex-col gap-4 mt-12 md:mt-5">
           {LINKS.map((link, idx) => (
             <Link key={idx} href={link.href}>
               <Button variant="ghost" className="h-16 flex items-start gap-3">
