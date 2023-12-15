@@ -7,7 +7,7 @@ import { Skills } from "@/components/sections/Skills";
 
 export const Main = () => {
   return (
-    <main className="container space-y-20">
+    <main className="container space-y-24 overflow-auto scroll-pt-24">
       <Overview />
       <Experience />
       <Projects />

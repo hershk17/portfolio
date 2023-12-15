@@ -8,7 +8,7 @@ export const Experience = () => {
       <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         Experience
       </h1>
-      <h2 className="mt-2 mb-8">This is what I&#39;ve been up to</h2>
+      <h2 className="mt-4 mb-8">This is what I&#39;ve been up to</h2>
 
       <ol className="relative border-s border-gray-200 dark:border-gray-700 pt-1 ml-1">
         {EXPERIENCES.map((experience, idx) => (

@@ -14,7 +14,7 @@ export const Skills = () => {
       <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         Skills
       </h1>
-      <h2 className="mt-2 mb-10">
+      <h2 className="mt-3 mb-10">
         Here&#39;s my proficiency in different technologies
       </h2>
 

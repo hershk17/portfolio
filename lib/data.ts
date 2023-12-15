@@ -12,9 +12,9 @@ import wordleImg from "@/public/img/screenshots/wordle.webp";
 
 // Logo imports
 import ceridianImg from "@/public/img/logos/ceridian.png";
+import isbImg from "@/public/img/logos/isb.png";
 import parImg from "@/public/img/logos/par.svg";
 import senecaImg from "@/public/img/logos/seneca.png";
-import isbImg from "@/public/img/logos/isb.png";
 
 // Icon imports
 import angularIcon from "@/public/img/icons/angular.png";
@@ -22,9 +22,11 @@ import awsIcon from "@/public/img/icons/aws.svg";
 import cppIcon from "@/public/img/icons/cpp.svg";
 import csharpIcon from "@/public/img/icons/csharp.svg";
 import dockerIcon from "@/public/img/icons/docker.svg";
+import emailIcon from "@/public/img/icons/email.svg";
 import gitIcon from "@/public/img/icons/git.svg";
 import githubIcon from "@/public/img/icons/github.svg";
 import javaIcon from "@/public/img/icons/java.svg";
+import linkedinIcon from "@/public/img/icons/linkedin.svg";
 import mongodbIcon from "@/public/img/icons/mongodb.svg";
 import mssqlIcon from "@/public/img/icons/mssql.svg";
 import mysqlIcon from "@/public/img/icons/mysql.svg";
@@ -322,5 +324,26 @@ export const SKILLS = [
       { name: "Actions", icon: githubIcon, experience: 85 },
       { name: "Docker", icon: dockerIcon, experience: 85 },
     ],
+  },
+];
+
+export const LINKS = [
+  {
+    title: "Email",
+    description: "hersh.k17@gmail.com",
+    href: "mailto:hersh.k17@gmail.com",
+    icon: emailIcon,
+  },
+  {
+    title: "LinkedIn",
+    description: "Harsh Keswani",
+    href: "https://www.linkedin.com/in/hershk17/",
+    icon: linkedinIcon,
+  },
+  {
+    title: "GitHub",
+    description: "hershk17",
+    href: "https://github.com/hershk17",
+    icon: githubIcon,
   },
 ];

@@ -6,7 +6,7 @@ export const About = () => {
       <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
         About
       </h1>
-      <h2 className="mt-2 mb-10">a little about me</h2>
+      <h2 className="mt-3 mb-10">A little about me</h2>
 
       {ABOUT.map((item) => (
         <section key={item.id}>
