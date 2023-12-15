@@ -11,12 +11,9 @@ import { Progress } from "../ui/progress";
 export const Skills = () => {
   return (
     <section id="skills">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Skills
       </h1>
-      <h2 className="mt-3 mb-10">
-        Here&#39;s my proficiency in different technologies
-      </h2>
 
       <section className="flex flex-wrap lg:grid lg:grid-cols-2 mt-10 gap-6">
         {SKILLS.map((skill, idx) => (
@@ -26,7 +23,7 @@ export const Skills = () => {
               {/* <CardDescription>Card Description</CardDescription> */}
             </CardHeader>
             <CardContent>
-              <ul className="flex justify-between space-x-6">
+              <ul className="flex justify-between space-x-6 my-4">
                 {skill.technologies.map((technology, idx) => (
                   <li
                     key={idx}

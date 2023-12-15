@@ -200,7 +200,7 @@ export const PROJECTS = [
     links: [
       {
         type: "GitHub",
-        url: "",
+        url: "https://github.com/hershk17/portfolio",
       },
     ],
   },
@@ -232,7 +232,7 @@ export const PROJECTS = [
     title: "Snakes and Ladders",
     img: snlImg,
     stack: ["C++"],
-    desc: "A terminal-based version of the popular Snakes and Ladders board game.",
+    desc: "A terminal-based version of the Snakes n' Ladders board game.",
     links: [
       {
         type: "GitHub",
@@ -240,18 +240,18 @@ export const PROJECTS = [
       },
     ],
   },
-  {
-    title: "Wordle Clone",
-    img: wordleImg,
-    techstack: ["React", "JavaScript", "HTML/CSS"],
-    desc: "A simple word game inspired by the popular browser game 'Wordle'.",
-    links: [
-      {
-        type: "Work in Progress...",
-        url: "",
-      },
-    ],
-  },
+  // {
+  //   title: "Wordle Clone",
+  //   img: wordleImg,
+  //   techstack: ["React", "JavaScript", "HTML/CSS"],
+  //   desc: "A simple word game inspired by the popular browser game 'Wordle'.",
+  //   links: [
+  //     {
+  //       type: "Work in Progress...",
+  //       url: "",
+  //     },
+  //   ],
+  // },
 ];
 
 export const ABOUT = [

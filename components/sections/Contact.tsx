@@ -55,10 +55,9 @@ export const Contact = () => {
 
   return (
     <section id="contact">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Contact
       </h1>
-      <h2 className="mt-3 mb-12">Let&#39;s get in touch!</h2>
 
       <section className="flex flex-wrap gap-20">
         <Form {...form}>

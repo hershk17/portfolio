@@ -3,10 +3,9 @@ import { ABOUT } from "@/lib/data";
 export const About = () => {
   return (
     <section id="about">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         About
       </h1>
-      <h2 className="mt-3 mb-10">A little about me</h2>
 
       {ABOUT.map((item) => (
         <section key={item.id}>

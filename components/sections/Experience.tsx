@@ -5,20 +5,19 @@ import Image from "next/image";
 export const Experience = () => {
   return (
     <section id="experience">
-      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl">
+      <h1 className="scroll-m-20 text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Experience
       </h1>
-      <h2 className="mt-4 mb-8">This is what I&#39;ve been up to</h2>
 
-      <ol className="relative border-s border-gray-200 dark:border-gray-700 pt-1 ml-1">
+      <ol className="relative border-s border-violet-100 dark:border-violet-900 pt-1 ml-1">
         {EXPERIENCES.map((experience, idx) => (
-          <li key={idx} className="mb-14 ms-4 ml-6">
+          <li key={idx} className="mb-14 ms-4 ml-10">
             <div
               className={cn(
-                "absolute rounded-full w-3 h-3 mt-1.5 -start-1.5 ",
+                "absolute rounded-full ",
                 idx === 0
-                  ? "bg-gray-600 dark:bg-gray-100"
-                  : "bg-gray-300 dark:bg-gray-500"
+                  ? "w-4 h-4 mt-2 -start-2 bg-primary dark:bg-violet-500"
+                  : "w-3 h-3 mt-1.5 -start-1.5 bg-violet-200 dark:bg-violet-900"
               )}
             ></div>
             <Image
