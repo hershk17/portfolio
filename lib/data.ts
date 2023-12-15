@@ -45,7 +45,7 @@ import {
 import { BackpackIcon } from "lucide-react";
 
 export const NAV_ITEMS = [
-  { name: "Home", href: "", icon: HomeIcon },
+  { name: "Home", href: "#overview", icon: HomeIcon },
   { name: "About", href: "#about", icon: PersonIcon },
   { name: "Experience", href: "#experience", icon: BackpackIcon },
   { name: "Skills", href: "#skills", icon: LightningBoltIcon },
