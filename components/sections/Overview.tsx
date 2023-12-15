@@ -17,9 +17,9 @@ export const Overview = () => {
       <Image
         src={pfp}
         alt="Profile Picture"
-        className="rounded-xl shadow-lg max-h-[40dvh] w-[40dvh]"
+        className="rounded-xl shadow-lg h-[220px] w-[220px] md:h-[40dvh] md:w-[40dvh]"
       />
-      <span className="text-6xl mt-[5dvh]">
+      <span className="text-5xl md:text-6xl mt-[5dvh]">
         Hi, I&#39;m{" "}
         <strong className="whitespace-nowrap">Harsh Keswani.</strong>
       </span>
