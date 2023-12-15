@@ -40,7 +40,7 @@ export const Projects = () => {
                       <Link href={link.url} target="_blank">
                         <p className="flex items-center gap-2">
                           <Icon />
-                          {link.type}
+                          {link.title}
                         </p>
                       </Link>
                     </Button>
