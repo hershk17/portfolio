@@ -57,7 +57,6 @@ export const ContactForm = () => {
         });
       })
       .catch((err) => {
-        console.log(err);
         toast({
           title: "Error sending message.",
           variant: "destructive",
