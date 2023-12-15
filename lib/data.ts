@@ -36,11 +36,14 @@ import typescriptIcon from "@/public/icons/typescript.svg";
 import {
   CodeIcon,
   EnvelopeClosedIcon,
+  ExternalLinkIcon,
   GitHubLogoIcon,
   HomeIcon,
   LightningBoltIcon,
+  Link1Icon,
   LinkedInLogoIcon,
   PersonIcon,
+  PlayIcon,
 } from "@radix-ui/react-icons";
 import { BackpackIcon } from "lucide-react";
 
@@ -115,11 +118,15 @@ export const PROJECTS = [
     ],
     links: [
       {
-        type: "Demo",
+        title: "Demo",
+        icon: PlayIcon,
+        type: "default",
         url: "https://www.youtube.com/watch?v=uKlhKMTh05k",
       },
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/banano-wallet-web-app",
       },
     ],
@@ -138,11 +145,15 @@ export const PROJECTS = [
     ],
     links: [
       {
-        type: "Live",
+        title: "Live",
+        icon: ExternalLinkIcon,
+        type: "default",
         url: "https://policy-planner.vercel.app/home",
       },
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/insurance-calculator",
       },
     ],
@@ -161,11 +172,15 @@ export const PROJECTS = [
     ],
     links: [
       {
-        type: "Live",
+        title: "Live",
+        icon: ExternalLinkIcon,
+        type: "default",
         url: "https://play.google.com/store/apps/details?id=com.dps926.moviespace",
       },
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/movie-space-ionic-app",
       },
     ],
@@ -177,11 +192,15 @@ export const PROJECTS = [
     stack: ["Angular", "TypeScript", "HTML/CSS", "Ionic", "Firebase"],
     links: [
       {
-        type: "Demo",
+        title: "Demo",
+        icon: PlayIcon,
+        type: "default",
         url: "https://www.youtube.com/watch?v=r-ZLR86G9oo",
       },
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/capstone-events-app",
       },
     ],
@@ -193,11 +212,15 @@ export const PROJECTS = [
     stack: ["React", "JavaScript", "HTML/CSS", "Bootstap", "Vercel"],
     links: [
       {
-        type: "Live",
+        title: "Live",
+        icon: ExternalLinkIcon,
+        type: "default",
         url: "https://weatherite.vercel.app/",
       },
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/weather-web-app",
       },
     ],
@@ -209,7 +232,9 @@ export const PROJECTS = [
     stack: ["React", "JavaScript", "HTML/CSS", "MUI", "Firebase"],
     links: [
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/portfolio",
       },
     ],
@@ -221,7 +246,9 @@ export const PROJECTS = [
     stack: ["Java", "JavaFX", "PostgreSQL"],
     links: [
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/library-manager-app",
       },
     ],
@@ -233,7 +260,9 @@ export const PROJECTS = [
     desc: "A desktop application for managing emails.",
     links: [
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/desktop-mail-app",
       },
     ],
@@ -245,23 +274,13 @@ export const PROJECTS = [
     desc: "A terminal-based version of the Snakes n' Ladders board game.",
     links: [
       {
-        type: "GitHub",
+        title: "GitHub",
+        icon: GitHubLogoIcon,
+        type: "outline",
         url: "https://github.com/hershk17/snl-terminal-app",
       },
     ],
   },
-  // {
-  //   title: "Wordle Clone",
-  //   img: wordleImg,
-  //   techstack: ["React", "JavaScript", "HTML/CSS"],
-  //   desc: "A simple word game inspired by the popular browser game 'Wordle'.",
-  //   links: [
-  //     {
-  //       type: "Work in Progress...",
-  //       url: "",
-  //     },
-  //   ],
-  // },
 ];
 
 export const ABOUT = [

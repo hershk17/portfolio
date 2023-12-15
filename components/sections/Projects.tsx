@@ -1,12 +1,7 @@
-import {
-  ExternalLinkIcon,
-  GitHubLogoIcon,
-  PlayIcon,
-} from "@radix-ui/react-icons";
 import Image from "next/image";
 import Link from "next/link";
 
-import { buttonVariants } from "@/components/ui/button";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardDescription,
@@ -38,25 +33,19 @@ export const Projects = () => {
                 <CardDescription>{project.desc}</CardDescription>
               </CardHeader>
               <CardFooter className="gap-2">
-                {project.links.map((link, idx) => (
-                  <Link
-                    key={idx}
-                    href={link.url}
-                    className={buttonVariants({
-                      variant:
-                        link.type === "Demo" || link.type === "Live"
-                          ? "default"
-                          : "outline",
-                    })}
-                  >
-                    <p className="flex items-center gap-2">
-                      {link.type === "Demo" && <PlayIcon />}
-                      {link.type === "Live" && <ExternalLinkIcon />}
-                      {link.type === "GitHub" && <GitHubLogoIcon />}
-                      {link.type}
-                    </p>
-                  </Link>
-                ))}
+                {project.links.map((link, idx) => {
+                  const Icon = link.icon;
+                  return (
+                    <Button key={idx} variant={link.type as any} asChild>
+                      <Link href={link.url} target="_blank">
+                        <p className="flex items-center gap-2">
+                          <Icon />
+                          {link.type}
+                        </p>
+                      </Link>
+                    </Button>
+                  );
+                })}
               </CardFooter>
             </Card>
           </article>
