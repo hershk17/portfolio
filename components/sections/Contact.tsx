@@ -1,8 +1,11 @@
 "use client";
 
+import Image from "next/image";
+import Link from "next/link";
 import { useForm } from "react-hook-form";
-import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
+
+import { Button } from "@/components/ui/button";
 import {
   Form,
   FormControl,
@@ -13,13 +16,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Button } from "../ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { useToast } from "@/components/ui/use-toast";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { PaperPlaneIcon } from "@radix-ui/react-icons";
-import { Textarea } from "../ui/textarea";
-import Link from "next/link";
+
 import { LINKS } from "@/lib/data";
-import Image from "next/image";
-import { useToast } from "../ui/use-toast";
 
 const formSchema = z.object({
   email: z.string().email({ message: "Please enter a valid email" }),
@@ -35,7 +37,7 @@ const formSchema = z.object({
 
 export const Contact = () => {
   const { toast } = useToast();
-  
+
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -44,7 +46,7 @@ export const Contact = () => {
     },
   });
 
-  const onSubmit = (values: z.infer<typeof formSchema>) => {
+  function onSubmit (values: z.infer<typeof formSchema>) {
     toast({
       title: "Message sent successfully.",
       description: "I will get back to you as soon as possible.",
