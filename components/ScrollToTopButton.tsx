@@ -29,13 +29,13 @@ const ScrollToTopButton = () => {
 
   return (
     <Button
-      className={`fixed right-20 rounded-full shadow-xl duration-200 gap-2 ${
-        isVisible ? "bottom-28 opacity-100" : "bottom-0 opacity-0"
+      className={`fixed inset-x-0 m-auto rounded-full shadow-xl duration-200 gap-2 ${
+        isVisible ? "bottom-16 opacity-100" : "bottom-0 opacity-0"
       }`}
       onClick={scrollToTop}
     >
       Back to top
-      <ChevronUpIcon className="h-4 w-4" />
+      <ChevronUpIcon className="h-5 w-5" />
     </Button>
   );
 };
