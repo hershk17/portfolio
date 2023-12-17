@@ -14,7 +14,7 @@ export const Overview = () => {
   return (
     <section
       id="overview"
-      className="flex flex-col h-[calc(100dvh-8rem)] text-center justify-center items-center"
+      className="flex flex-col h-[calc(100vh-8rem)] text-center justify-center items-center"
     >
       <Image
         src={pfp}
