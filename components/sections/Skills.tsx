@@ -42,7 +42,8 @@ export const Skills = () => {
                       alt={technology.name}
                       className={cn(
                         "w-14",
-                        mounted && resolvedTheme === "dark" &&
+                        mounted &&
+                          resolvedTheme === "dark" &&
                           technology.invert &&
                           "invert"
                       )}

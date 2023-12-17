@@ -1,8 +1,10 @@
 "use client";
 
+import { Button } from "@/components/ui/button";
 import { ChevronUpIcon } from "@radix-ui/react-icons";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
+
+import { animateScroll } from "react-scroll";
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -19,17 +21,16 @@ const ScrollToTopButton = () => {
   }, []);
 
   const scrollToTop = () => {
-    isVisible &&
-      window.scrollTo({
-        top: 0,
-        behavior: "auto",
-      });
+    animateScroll.scrollToTop({
+      duration: 400,
+      smooth: true,
+    });
   };
 
   return (
     <Button
-      className={`fixed inset-x-0 m-auto rounded-full shadow-lg duration-200 gap-2 ${
-        isVisible ? "bottom-10" : "bottom-[-5rem]"
+      className={`fixed right-20 rounded-full shadow-xl duration-200 gap-2 ${
+        isVisible ? "bottom-28 opacity-100" : "bottom-0 opacity-0"
       }`}
       onClick={scrollToTop}
     >
