@@ -14,7 +14,7 @@ export const Overview = () => {
   return (
     <section
       id="overview"
-      className="flex flex-col h-[calc(100vh-8rem)] text-center justify-center items-center"
+      className="flex flex-col h-[calc(100vh-7rem)] md:h-[calc(100vh-8rem)] text-center justify-center items-center"
     >
       <Image
         src={pfp}
@@ -28,7 +28,10 @@ export const Overview = () => {
       </span>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-7 mt-16">
-        <Link href="https://drive.google.com/file/d/14z5-qhxuDHm9UHOTPu8Hs1YVBjDVQsLK/view?usp=drive_link" target="_blank">
+        <Link
+          href="https://drive.google.com/file/d/14z5-qhxuDHm9UHOTPu8Hs1YVBjDVQsLK/view?usp=drive_link"
+          target="_blank"
+        >
           <Button className="text-lg h-14 flex w-72 md:w-48 gap-2">
             <ClipboardIcon className="h-5 w-5" />
             My Resume

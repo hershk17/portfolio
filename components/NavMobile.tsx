@@ -17,11 +17,11 @@ export const NavMobile = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="flex md:hidden">
+        <Button variant="ghost" size="icon" className="flex md:hidden shadow-none">
           <HamburgerMenuIcon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="w-[350px] max-w-[80dvw] px-8">
+      <SheetContent className="w-[300px] max-w-[80dvw] px-8">
         <SheetTitle className="text-2xl">Harsh&#39;s Portfolio</SheetTitle>
         <nav className="flex flex-col text-xl space-y-7 mt-10">
           {NAV_ITEMS.map((link) => {
