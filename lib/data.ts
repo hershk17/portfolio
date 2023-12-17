@@ -102,7 +102,7 @@ export const EXPERIENCES = [
     responsibilities: [
       "Scored 97.5% in CBSE Computer Science Boards",
       "Maintained Vice President position in the Student Council for 3 years",
-      "Planned, organized, and directed various community programs and fundraising events"
+      "Planned and organized community programs, festivals, and fundraising events"
     ],
   },
 ];
