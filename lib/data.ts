@@ -10,10 +10,10 @@ import snlImg from "@/public/screenshots/snl.webp";
 import weatherWidgetImg from "@/public/screenshots/weather-widget.webp";
 
 // Logo imports
-import ceridianImg from "@/public/logos/ceridian.png";
-import isbImg from "@/public/logos/isb.png";
+import ceridianImg from "@/public/logos/ceridian.webp";
+import isbImg from "@/public/logos/isb.webp";
 import parImg from "@/public/logos/par.webp";
-import senecaImg from "@/public/logos/seneca.png";
+import senecaImg from "@/public/logos/seneca.webp";
 
 // Icon imports
 import angularIcon from "@/public/icons/angular.png";
