@@ -29,8 +29,8 @@ const ScrollToTopButton = () => {
 
   return (
     <Button
-      className={`fixed inset-x-0 w-34 m-auto rounded-full shadow-xl duration-200 gap-2 ${
-        isVisible ? "bottom-16 opacity-100" : "bottom-0 opacity-0"
+      className={`fixed md:inset-x-0 md:m-auto right-10 rounded-full shadow-xl duration-200 gap-2 ${
+        isVisible ? "bottom-20 opacity-100" : "bottom-0 opacity-0"
       }`}
       onClick={scrollToTop}
     >

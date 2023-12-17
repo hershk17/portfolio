@@ -35,7 +35,7 @@ export default function Home() {
         <Contact />
       </main>
 
-      <footer className="bg-secondary text-foreground/80 mt-24">
+      <footer className="bg-secondary text-foreground/80 mt-28">
         <section className="container h-14 flex justify-between items-center">
           <p>&#169; Harsh K, 2023</p>
           <p>built with Next.js</p>
