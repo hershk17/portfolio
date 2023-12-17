@@ -27,7 +27,7 @@ export const Experience = () => {
               />
               <h2 className="text-xl font-semibold">{experience.title}</h2>
               <h3>{experience.location}</h3>
-              <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+              <time className="mb-1 text-sm text-gray-600 dark:text-gray-400">
                 {experience.date}
               </time>
               <ul className="mt-3 list-disc ml-4">

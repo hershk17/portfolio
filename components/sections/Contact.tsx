@@ -26,7 +26,7 @@ export const Contact = () => {
                   <Icon className="h-5 w-5 mt-1" />
                   <div className="flex flex-col items-start">
                     <span className="text-xl">{link.title}</span>
-                    <span className="text-gray-400 dark:text-gray-500">
+                    <span className="font-normal text-sm text-gray-600 dark:text-gray-400">
                       {link.description}
                     </span>
                   </div>

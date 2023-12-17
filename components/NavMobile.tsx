@@ -17,7 +17,12 @@ export const NavMobile = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="ghost" size="icon" className="flex md:hidden shadow-none">
+        <Button
+          aria-label="Toggle navigation menu"
+          variant="ghost"
+          size="icon"
+          className="flex md:hidden shadow-none"
+        >
           <HamburgerMenuIcon className="h-[1.2rem] w-[1.2rem]" />
         </Button>
       </SheetTrigger>

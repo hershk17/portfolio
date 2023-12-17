@@ -39,7 +39,7 @@ export const Skills = () => {
                   >
                     <Image
                       src={technology.icon}
-                      alt={technology.name}
+                      alt={technology.name + " icon"}
                       className={cn(
                         "w-14",
                         mounted &&
@@ -50,6 +50,7 @@ export const Skills = () => {
                     />
                     <p className="mt-1 mb-2">{technology.name}</p>
                     <Progress
+                      aria-label={technology.experience + "% proficiency"}
                       value={technology.experience}
                       className="w-[75%] h-1 bg-primary/20"
                     />

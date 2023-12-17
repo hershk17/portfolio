@@ -10,6 +10,7 @@ export function ToggleTheme() {
 
   return (
     <Button
+      aria-label="Toggle theme"
       variant="ghost"
       size="icon"
       className="shadow-none"
