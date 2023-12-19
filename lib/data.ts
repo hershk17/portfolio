@@ -292,9 +292,8 @@ export const ABOUT = [
     id: "01",
     title: "Who I Am",
     paragraphs: [
-      "Hi, my name's Harsh.",
-      "I have a bachelors degree in Software Development from Seneca College and a passion for full stack development.",
-      "In my free time, I enjoy travelling, photography, football, video games and learning more about Software Development.",
+      "Hi, my name's Harsh. I have a bachelors degree in Software Development from Seneca College and a passion for full stack development.",
+      "In my free time, I enjoy travelling, photography, football, video games and learning about the latest web technologies.",
     ],
   },
   {
@@ -318,9 +317,9 @@ export const SKILLS = [
   {
     title: "Frontend",
     technologies: [
-      { name: "React", icon: reactIcon, experience: 95 },
-      { name: "TypeScript", icon: typescriptIcon, experience: 95 },
-      { name: "Next.js", icon: nextjsIcon, experience: 90, invert: true },
+      { name: "React", icon: reactIcon, experience: 90 },
+      { name: "TypeScript", icon: typescriptIcon, experience: 90 },
+      { name: "Next.js", icon: nextjsIcon, experience: 85, invert: true },
       { name: "Angular", icon: angularIcon, experience: 80 },
     ],
   },
@@ -328,16 +327,16 @@ export const SKILLS = [
     title: "Backend",
     technologies: [
       { name: ".NET/C#", icon: csharpIcon, experience: 95 },
-      { name: "Java", icon: javaIcon, experience: 90 },
-      { name: "Node.js", icon: nodejsIcon, experience: 80 },
-      { name: "C++", icon: cppIcon, experience: 75 },
+      { name: "Java", icon: javaIcon, experience: 85 },
+      { name: "Node.js", icon: nodejsIcon, experience: 85 },
+      { name: "C++", icon: cppIcon, experience: 80 },
     ],
   },
   {
     title: "Databases",
     technologies: [
-      { name: "PostgreSQL", icon: postgresqlIcon, experience: 95 },
-      { name: "MSSQL", icon: mssqlIcon, experience: 90 },
+      { name: "PostgreSQL", icon: postgresqlIcon, experience: 90 },
+      { name: "MSSQL", icon: mssqlIcon, experience: 85 },
       { name: "MySQL", icon: mysqlIcon, experience: 85 },
       { name: "Mongo", icon: mongodbIcon, experience: 80 },
     ],
@@ -345,10 +344,10 @@ export const SKILLS = [
   {
     title: "DevOps",
     technologies: [
-      { name: "Git", icon: gitIcon, experience: 95 },
-      { name: "AWS", icon: awsIcon, experience: 90, invert: true },
-      { name: "Actions", icon: githubIcon, experience: 85, invert: true },
-      { name: "Docker", icon: dockerIcon, experience: 85 },
+      { name: "Git", icon: gitIcon, experience: 90 },
+      { name: "Actions", icon: githubIcon, experience: 90, invert: true },
+      { name: "AWS", icon: awsIcon, experience: 80, invert: true },
+      { name: "Docker", icon: dockerIcon, experience: 80 },
     ],
   },
 ];

@@ -20,12 +20,14 @@ export const Overview = () => {
         src={pfp}
         alt="Profile Picture"
         priority={true}
-        className="rounded-xl shadow-lg h-[220px] w-[220px] mt-12 md:mt-0 md:h-[40dvh] md:w-[40dvh]"
+        className="rounded-xl shadow-lg h-[220px] w-[220px] mt-12 md:mt-0 md:h-[40vh] md:w-[40vh]"
       />
-      <span className="text-5xl md:text-6xl mt-[5dvh]">
-        Hi, I&#39;m{" "}
-        <strong className="whitespace-nowrap">Harsh Keswani.</strong>
-      </span>
+      <p className="mt-[5vh] flex flex-col md:flex-row flex-wrap gap-2 md:gap-5">
+        <span className="text-4xl md:text-6xl">Hi, I&#39;m</span>
+        <strong className="whitespace-nowrap text-5xl md:text-6xl">
+          Harsh Keswani.
+        </strong>
+      </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-7 mt-16">
         <Link

@@ -52,7 +52,7 @@ export const Skills = () => {
                     <Progress
                       aria-label={technology.experience + "% proficiency"}
                       value={technology.experience}
-                      className="w-[75%] h-1 bg-primary/20"
+                      className="w-[75%] h-1 bg-primary/30 dark:bg-primary/50"
                     />
                   </li>
                 ))}
