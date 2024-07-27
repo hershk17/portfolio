@@ -26,7 +26,7 @@ export const Overview = () => {
       </p>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-7">
-        <Link href="#projects">
+        <Link href="#contact">
           <Button className="text-lg h-14 flex w-72 md:w-48 gap-2">
             <EnvelopeClosedIcon className="h-5 w-5" />
             Contact Me
