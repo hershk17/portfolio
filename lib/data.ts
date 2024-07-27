@@ -10,7 +10,7 @@ import snlImg from "@/public/screenshots/snl.webp";
 import weatherWidgetImg from "@/public/screenshots/weather-widget.webp";
 
 // Logo imports
-import ceridianImg from "@/public/logos/ceridian.webp";
+import dayforceImg from "@/public/logos/dayforce.webp";
 import isbImg from "@/public/logos/isb.webp";
 import parImg from "@/public/logos/par.webp";
 import senecaImg from "@/public/logos/seneca.webp";
@@ -40,15 +40,14 @@ import {
   GitHubLogoIcon,
   HomeIcon,
   LightningBoltIcon,
-  Link1Icon,
   LinkedInLogoIcon,
   PersonIcon,
-  PlayIcon,
+  PlayIcon
 } from "@radix-ui/react-icons";
 import { BackpackIcon } from "lucide-react";
 
 export const NAV_ITEMS = [
-  { name: "Home", href: "#overview", icon: HomeIcon },
+  { name: "Overview", href: "#overview", icon: HomeIcon },
   { name: "About", href: "#about", icon: PersonIcon },
   { name: "Experience", href: "#experience", icon: BackpackIcon },
   { name: "Skills", href: "#skills", icon: LightningBoltIcon },
@@ -59,8 +58,9 @@ export const NAV_ITEMS = [
 export const EXPERIENCES = [
   {
     title: "Software Developer",
-    company: "Ceridian",
-    img: ceridianImg,
+    company: "Dayforce",
+    img: dayforceImg,
+    imgSize: "lg",
     date: "January 2024 - Present",
     location: "North York, Ontario, Canada",
     responsibilities: [],
@@ -69,6 +69,7 @@ export const EXPERIENCES = [
     title: "Software Developer",
     company: "PAR Technology",
     img: parImg,
+    imgSize: "md",
     invert: true,
     date: "May 2022 - April 2023",
     location: "Markham, Ontario, Canada",
@@ -84,6 +85,7 @@ export const EXPERIENCES = [
     title: "Honours Bachelor of Technology - Software Development",
     company: "Seneca College",
     img: senecaImg,
+    imgSize: "lg",
     date: "January 2020 - August 2023",
     location: "North York, Ontario, Canada",
     responsibilities: [
@@ -96,13 +98,14 @@ export const EXPERIENCES = [
     title: "High School Diploma - Computer Science",
     company: "The Indian School, Bahrain",
     img: isbImg,
+    imgSize: "lg",
     invert: true,
     date: "March 2019",
     location: "Isa Town, Kingdom of Bahrain",
     responsibilities: [
       "Scored 97.5% in CBSE Computer Science Boards",
       "Maintained Vice President position in the Student Council for 3 years",
-      "Planned and organized community programs, festivals, and fundraising events"
+      "Planned and organized community programs, festivals, and fundraising events",
     ],
   },
 ];
