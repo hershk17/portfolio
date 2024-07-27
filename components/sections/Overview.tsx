@@ -10,7 +10,7 @@ export const Overview = () => {
   return (
     <section
       id="overview"
-      className="container h-full min-h-[700px] flex flex-col text-center justify-center items-center pt-16 md:pt-20 space-y-12"
+      className="container h-full min-h-[700px] flex flex-col text-center justify-center items-center pt-16 md:pt-20 space-y-8 md:space-y-12"
     >
       <Image
         src={pfp}
@@ -18,8 +18,8 @@ export const Overview = () => {
         priority={true}
         className="rounded-xl shadow-lg h-[220px] w-[220px] mt-12 md:mt-0 md:h-[300px] md:min-w-[300px]"
       />
-      <p className="flex flex-col md:flex-row flex-wrap gap-5">
-        <span className="text-5xl md:text-6xl">Hi, I&#39;m</span>
+      <p className="flex flex-col md:flex-row flex-wrap gap-3">
+        <span className="text-4xl md:text-6xl">Hi, I&#39;m</span>
         <strong className="whitespace-nowrap text-6xl">
           Harsh.
         </strong>
