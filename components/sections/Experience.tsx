@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const Experience = () => {
   return (
-    <section id="experience">
+    <section id="experience" className="container">
       <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Experience
       </h1>

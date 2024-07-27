@@ -19,7 +19,7 @@ export const Skills = () => {
   }, []);
 
   return (
-    <section id="skills">
+    <section id="skills" className="container">
       <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Skills
       </h1>

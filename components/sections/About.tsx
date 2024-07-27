@@ -2,7 +2,7 @@ import { ABOUT } from "@/lib/data";
 
 export const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="container">
       <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         About
       </h1>

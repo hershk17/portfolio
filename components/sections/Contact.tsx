@@ -7,7 +7,7 @@ import { ContactForm } from "../ContactForm";
 
 export const Contact = () => {
   return (
-    <section id="contact">
+    <section id="contact" className="container">
       <h1 className="text-5xl font-extrabold tracking-tight lg:text-7xl mb-14">
         Contact
       </h1>
