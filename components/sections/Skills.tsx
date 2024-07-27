@@ -31,17 +31,17 @@ export const Skills = () => {
               <CardTitle>{skill.title}</CardTitle>
             </CardHeader>
             <CardContent>
-              <ul className="flex justify-around space-x-6 my-4">
+              <ul className="grid grid-cols-2 lg:flex lg:justify-around gap-4 lg:space-x-6 my-4">
                 {skill.technologies.map((technology, idx) => (
                   <li
                     key={idx}
-                    className="flex flex-col items-center justify-center md:w-16 lg:w-24 "
+                    className="flex flex-col items-center justify-center"
                   >
                     <Image
                       src={technology.icon}
                       alt={technology.name + " icon"}
                       className={cn(
-                        "w-14",
+                        "w-16",
                         mounted &&
                           resolvedTheme === "dark" &&
                           technology.invert &&

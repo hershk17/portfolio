@@ -10,7 +10,7 @@ export const Overview = () => {
   return (
     <section
       id="overview"
-      className="container h-full min-h-[700px] flex flex-col text-center justify-center items-center pt-16 md:pt-20 space-y-8 md:space-y-12"
+      className="container h-full min-h-[700px] flex flex-col text-center justify-center items-center pt-8 md:pt-16 space-y-8 md:space-y-12"
     >
       <Image
         src={pfp}
